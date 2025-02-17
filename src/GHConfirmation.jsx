@@ -8,7 +8,7 @@ function GHConfirmation() {
     const handleClick = async (e)=> {
         e.preventDefault()
 
-        let result = await fetch('http://localhost:3000/GH', {
+        let result = await fetch('https://a4-arsimonini-backend.onrender.com/GH', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'}
         });

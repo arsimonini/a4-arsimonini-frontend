@@ -19,7 +19,7 @@ function Survey() {
         const id = crypto.randomUUID()
         const spentHour = parseFloat(form.spent) / parseFloat(form.hours);
 
-        let result = await fetch('http://localhost:3000/submit', {
+        let result = await fetch('https://a4-arsimonini-backend.onrender.com/submit', {
             method: 'POST',
             body: JSON.stringify({_id: id, username: localStorage.getItem("username"), console: form.console, game: form.game, completion: form.completion, spent: form.spent, hours: form.hours, spentHour: spentHour}),
             headers: {'Content-Type': 'application/json'}

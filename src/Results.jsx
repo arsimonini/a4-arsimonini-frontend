@@ -1,7 +1,7 @@
 import {useState} from "react";
 import {useEffect} from "react";
 
-const url = "http://localhost:3000/table";
+const url = "https://a4-arsimonini-backend.onrender.com/table";
 
 
 function Results() {
@@ -43,7 +43,7 @@ function Results() {
 
 
 
-        let result = await fetch('http://localhost:3000/update/' + param, {
+        let result = await fetch('https://a4-arsimonini-backend.onrender.com/update/' + param, {
             method: 'PUT',
             body: JSON.stringify({_id: id, username: localStorage.getItem("username"), console: consoleInput, game: gameInput, completion: completionInput, spent: spentInput, hours: hoursInput, spentHour: spentHour}),
             headers: {'Content-Type': 'application/json'}
@@ -58,7 +58,7 @@ function Results() {
         console.log(param)
 
 
-        let result = await fetch('http://localhost:3000/delete/' + param, {
+        let result = await fetch('https://a4-arsimonini-backend.onrender.com/delete/' + param, {
             method: 'DELETE',
             headers: {'Content-Type': 'application/json'}
         });
