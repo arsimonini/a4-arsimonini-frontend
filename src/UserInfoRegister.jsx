@@ -18,7 +18,7 @@ function UserInfoRegister() {
 
         const id = crypto.randomUUID()
 
-        let result = await fetch('http://localhost:3000/register', {
+        let result = await fetch('https://a4-arsimonini-backend.onrender.com/register', {
             method: 'POST',
             body: JSON.stringify({_id: id, username: form.username, password: form.password}),
             headers: {'Content-Type': 'application/json'}

@@ -24,7 +24,7 @@ function UserInfo() {
         e.preventDefault();
         console.log(userForm)
 
-        let result = await fetch('http://localhost:3000/login', {
+        let result = await fetch('https://a4-arsimonini-backend.onrender.com/login', {
             method: 'POST',
             body: JSON.stringify({username: auth.username, password: userForm.password}),
             headers: {'Content-Type': 'application/json'}
@@ -66,7 +66,7 @@ function UserInfo() {
                     Register</button>
                 <button  id="githubButton" type="button"
                         className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">
-                    <a href = "http://localhost:3000/auth/github"> GitHub LogIn </a></button>
+                    <a href = "https://a4-arsimonini-backend.onrender.com/auth/github"> GitHub LogIn </a></button>
             </div>
             </div>
         </>
