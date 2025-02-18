@@ -5,6 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   server: {
-    allowedHosts: ['https://a4-arsimonini-frontend.onrender.com'],
+    allowedHosts: true,
   }
+
 })
